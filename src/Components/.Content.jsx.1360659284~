@@ -1,0 +1,78 @@
+import React from 'react'
+import { useState } from 'react'
+
+let Content = () => {
+  const [formData, setFormData] = useState({})
+  
+  function changHandler(event){
+    let {name , value} = event.target;
+    setFormData((prevData) => {
+      return {
+        ...prevData,
+        [name]: value
+      }
+    });
+  }
+  console.log(formData);
+  return (
+
+    <div>
+      <div>
+        <div className='flex flex-col gap-3'>
+        <h1 className='w-full text-center text-3xl font-bold '>Which describe you best ?</h1>
+        <p className='w-full text-center'>This will help us personlize your experience</p>
+        </div>
+      
+        <form>
+          <div className='relative '>
+            <input type="radio" onChange={changHandler} name="mode" value="Student or soon to be enrolled" id="1" checked={formData.mode === "Student or soon to be enrolled"} />"
+            <div className='flex absolute z-1 top-[3%] left-[49%] gap-3'>
+              <img src='src/Utilities/icons/student.png'/>
+              <label htmlFor="1"><span>Student</span>or soon to be enrolled</label>
+            </div>
+          </div>
+
+          <div className='relative'>
+            <input type="radio" onChange={changHandler} name="mode" value="Proffesional persuing a career" id="2" checked={formData.mode === "Proffesional persuing a career"} />"
+            <div className='flex absolute z-1 top-[3%] left-[49%]'>
+              <img src='src/Utilities/icons/businessman.png'/>
+              <label htmlFor="2"><span>Proffesional</span>persuing a career</label>
+            </div>
+          </div>
+          <div className='relative'>
+            <input type="radio" onChange={changHandler} name="mode" value="Parent of a school kid child" id="3" checked={formData.mode === "Parent of a school kid child"} />"
+            <div className='flex absolute z-1 top-[3%] left-[49%] bg-white border border-1 w-52 h'>
+              <img src='src/Utilities/icons/parent.png'/>
+              <label htmlFor="3"><span>Parent</span>of a School-age Child</label>
+            </div>
+          </div>
+          <div className='relative'>
+            <input type="radio" onChange={changHandler} name="mode" value="Lifelong learner" id="4" checked={formData.mode === "Lifelong learner"} />"
+            <div className='flex absolute z-1 top-[3%] left-[49%]'>
+              <img src='src/Utilities/icons/man-avatar.png'/>
+              <label htmlFor="4"><span>Lifelong</span> learner</label>
+            </div>
+          </div>
+          <div className='relative'>
+            <input type="radio" onChange={changHandler} name="mode" value="Teacher" id="5" checked={formData.mode === "Teacher"} />"
+            <div className='flex absolute z-1 top-[3%] left-[49%]'>
+              <img src='src/Utilities/icons/teacher.png'/>
+              <label htmlFor="5"><span>Teacher</span></label>
+            </div>
+          </div>
+          <div className='relative'>
+            <input type="radio" onChange={changHandler} name="mode" value="Others" id="6" checked={formData.mode === "Others"} />"
+            <div className='flex absolute z-1 top-[3%] left-[49%]'>
+              <img src='src/Utilities/icons/other.png'/>
+              <label htmlFor="6"><span>Others</span></label>
+            </div>
+          </div>
+          <button/>
+            
+        </form>
+        </div>
+      </div>
+    
+  )
+}
+export default Content;
