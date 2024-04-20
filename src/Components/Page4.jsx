@@ -6,7 +6,7 @@ import {useState} from 'react';
 let Page4 = () => {
   const clicked = true;
   const pageCount = 57.6;
-  const checked = true;
+  const [checked, setChecked] = useState(false)
   const [clickedData , setClickedData] = useState({});
   const [id, setid] = useState(0);
   console.log(clickedData);
@@ -22,6 +22,7 @@ let Page4 = () => {
       <div className='flex flex-wrap items-center justify-center gap-5 w-full'>
         <div className={`flex flex-col border border-1 rounded-md w-36 h-36 items-center justify-evenly hover: hover:outline-orange-200 hover:outline hover:outline-offset-0 hover:outline-2 hover:shadow-[0_4px_16px_0px_rgba(0,0,0,0.3)] ${id == 1 && `outline-orange-200 outline-offset-0 outline-2 outline shadow-[0_4px_16px_0px__rgba(0,0,0,0.3)]`}`} onClick={() => {
       setid(1);
+      setChecked(true);
       setClickedData({[id] : "Arithmetic Introductry"});
         }}>
           <div>
@@ -34,6 +35,7 @@ let Page4 = () => {
         </div>
         <div className={`flex flex-col border border-1 rounded-md w-36 h-36 items-center justify-evenly hover: hover:outline-orange-200 hover:outline hover:outline-offset-0 hover:outline-2 hover:shadow-[0_4px_16px_0px_rgba(0,0,0,0.3)] ${id == 2 && `outline-orange-200 outline-offset-0 outline-2 outline shadow-[0_4px_16px_0px__rgba(0,0,0,0.3)]`}`} onClick={() => {
           setid(2);
+          setChecked(true);
           setClickedData({[id] : "Besic Algebra"});
             }}>
           <div>
@@ -46,6 +48,7 @@ let Page4 = () => {
         </div>
         <div className={`flex flex-col border border-1 rounded-md w-36 h-36 items-center justify-evenly hover: hover:outline-orange-200 hover:outline hover:outline-offset-0 hover:outline-2 hover:shadow-[0_4px_16px_0px_rgba(0,0,0,0.3)] ${id == 3 && `outline-orange-200 outline-offset-0 outline-2 outline shadow-[0_4px_16px_0px__rgba(0,0,0,0.3)]`}`} onClick={() => {
           setid(3);
+      setChecked(true);
           setClickedData({[id] : "Introductory Algebra"});
             }}>
           <div>
@@ -58,6 +61,7 @@ let Page4 = () => {
         </div>
         <div className={`flex flex-col border border-1 rounded-md w-36 h-36 items-center justify-evenly hover: hover:outline-orange-200 hover:outline hover:outline-offset-0 hover:outline-2 hover:shadow-[0_4px_16px_0px_rgba(0,0,0,0.3)] ${id == 4 && `outline-orange-200 outline-offset-0 outline-2 outline shadow-[0_4px_16px_0px__rgba(0,0,0,0.3)]`}`} onClick={() => {
           setid(4);
+      setChecked(true);
           setClickedData({[id] : "calculus"});
             }}>
           <div>
