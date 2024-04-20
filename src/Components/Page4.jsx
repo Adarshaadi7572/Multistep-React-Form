@@ -25,7 +25,7 @@ let Page4 = () => {
       setClickedData({[id] : "Arithmetic Introductry"});
         }}>
           <div>
-            <img src='src/Utilities/icons/arithmetic.png' />
+            <img src='/Utilities/icons/arithmetic.png' />
           </div>
           <div className='flex flex-col items-center '>
             <p className='font-semibold text-sm'>Arithmetic</p>
@@ -37,7 +37,7 @@ let Page4 = () => {
           setClickedData({[id] : "Besic Algebra"});
             }}>
           <div>
-            <img src='src/Utilities/icons/equation.png' />
+            <img src='/Utilities/icons/equation.png' />
           </div>
           <div className='flex flex-col items-center '>
             <p className='font-semibold text-sm'>Besic Algebra</p>
@@ -49,7 +49,7 @@ let Page4 = () => {
           setClickedData({[id] : "Introductory Algebra"});
             }}>
           <div>
-            <img src='src/Utilities/icons/ialgebra.png' />
+            <img src='/Utilities/icons/ialgebra.png' />
           </div>
           <div className='flex flex-col items-center '>
             <p className='font-semibold text-sm'>Intermediate Algebra</p>
@@ -61,7 +61,7 @@ let Page4 = () => {
           setClickedData({[id] : "calculus"});
             }}>
           <div>
-            <img src='src/Utilities/icons/calculus.png' />
+            <img src='/Utilities/icons/calculus.png' />
           </div>
           <div className='flex flex-col items-center '>
             <p className='font-semibold text-sm'>Calculus</p>

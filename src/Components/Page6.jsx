@@ -19,14 +19,14 @@ return (
           <div className='flex border border-1 rounded-md w-96 items-center justify-evenly hover: hover:outline-orange-200 hover:outline hover:outline-offset-0 hover:outline-2 hover:shadow-[0_4px_16px_0px_rgba(0,0,0,0.3)] relative max-sm:w-80'>
             <p className='pl-4 max-sm:text-sm'><span className='font-semibold'>Foundational Maths</span> build your foundational skill in algebra, geometry and probability</p>
             <div>
-              <img src='src/Utilities/icons/Math_Foundations.gif' />
+              <img src='/Utilities/icons/Math_Foundations.gif' />
             </div>
             <div className='w-28 h-7 bg-orange-400 text-center rounded-full absolute -top-4 font-semibold text-sm flex items-center justify-center'> Most Populer</div>
           </div>
           <div className='flex border border-1 rounded-md w-96 items-center justify-evenly hover: hover:outline-orange-200 hover:outline hover:outline-offset-0 hover:outline-2 hover:shadow-[0_4px_16px_0px_rgba(0,0,0,0.3)] max-sm:w-80'>
             <p className='pl-4 max-sm:text-sm'><span className='font-semibold'>Foundational Maths</span> build your foundational skill in algebra, geometry and probability</p>
             <div>
-              <img src='src/Utilities/icons/Math_Foundations.gif' />
+              <img src='/Utilities/icons/Math_Foundations.gif' />
             </div>
          
           </div>
