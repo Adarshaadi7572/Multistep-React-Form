@@ -41,7 +41,7 @@ let Page2 = () => {
               }} />
               <div className={`flex absolute z-10 gap-3 bg-white border border-1 w-96 h-12 items-center pl-2 rounded-md hover: hover:outline-orange-200 hover:outline hover:outline-offset-0 hover:outline-2 hover:shadow-[0_4px_16px_0px_rgba(0,0,0,0.3)] max-[420px]:w-80 max-[333px]:w-64 ${Id == 1 && `outline-orange-200 outline-offset-0 outline-2 outline shadow-[0_4px_16px_0px__rgba(0,0,0,0.3)]`}`} onClick={() => clickeHandler(1)}>
                 <div>
-                  <img src='src/Utilities/icons/growth.png' />
+                  <img src='/Utilities/icons/growth.png' />
                 </div>
 
                 <label htmlFor="1" className='max-[333px]:text-sm'><span className='font-semibold max-[333px]:text-sm'>Learning</span> specific skills to advance my career</label>
